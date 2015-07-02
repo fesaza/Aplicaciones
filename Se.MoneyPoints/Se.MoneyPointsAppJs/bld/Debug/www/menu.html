@@ -1,0 +1,56 @@
+﻿<!--inicio menu sidebar-->
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav ">
+            <li class="active">
+                <a href="#">Inicio</a>
+            </li>
+            <li ng-repeat="asegurable in asegurables">
+               
+                <a href="#{{asegurable.Asegurable.Ruta}}" ng-click="ocultar()">{{asegurable.Asegurable.Nombre}}</a>
+            </li>
+            <li>
+                <a ng-click="logout()">Cerrar Sesión</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+<div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <img class="img-logo" src="css\images\logo-mp.png" />
+            <div class="navbar-header bg-menu">
+                <button id="menu-toggle" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-9" data-toggle="" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="bs-example-navbar-collapse-9" class="navbar-collapse collapse" style="height: 1px;">
+                
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    $("#menu-toggle").click(function (e) {
+
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+<script>
+    var $nav = jQuery('a');
+    $nav.on('click', function (e) {
+        jQuery("#wrapper").toggleClass("toggled");
+
+    });
+</script>

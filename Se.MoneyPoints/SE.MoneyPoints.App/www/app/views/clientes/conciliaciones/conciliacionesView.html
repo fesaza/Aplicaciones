@@ -1,0 +1,68 @@
+﻿
+<div class="row-fluid banner-ventas">
+    <img src="css\images\Conciliaciones.jpg" />
+</div>
+<div class="form-cliente">
+    <div kendo-tab-strip k-content-urls="[ null, null]" id="" style="background-color: #E7E7E7 !important">
+        <!-- tab list -->
+        <ul>
+            <li class="k-state-active">Enviar</li>
+            <li>Recibir</li>
+        </ul>
+
+        <!-- Primer tab -->
+        <div style="padding:0em .0em !important;">
+            <div class="bg-body">
+                <div id="example">
+                    <div class="padd-btn">
+                        <button ng-click="goPath('/conciliacionesNew')" class="btn btn-primary btn-lg btn-block">Nueva Conciliación</button>
+                    </div>
+
+                    <kendo-mobile-list-view id="divConciliacionesEnvia" options="conciliacionAliadosGridOptions" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo tab -->
+        <div style="padding:0em .0em !important;">
+            <div class="bg-body">
+                <kendo-mobile-list-view options="conciliacionClientesGridOptions" />
+            </div>
+        </div>
+    </div>
+</div>
+<script id="tmpConciliacionxAliado" type="text/x-kendo-tmpl">
+    <a class="container list-style" href="\#/conciliacionesDetails/{{dataItem.ConciliacionId}}">
+        <div>
+            <h3 class="title-list">
+                {{dataItem.AfiliadosCliente.Afiliado.Cliente.Tercero.Nombre}}
+            </h3>
+            <div>
+                <label>Valor:</label>
+                {{dataItem.Valor | currency: $ : 2}}
+            </div>
+            <div>
+                <label>Fecha:</label>
+                {{dataItem.Fecha | date : 'dd-MM-yyyy'}}
+            </div>
+        </div>
+    </a>
+</script>
+
+<script id="tmpConciliacionxCliente" type="text/x-kendo-tmpl">
+    <a class="container list-style" href="\#/recibirConciliaciones/{{dataItem.ConciliacionId}}">
+        <div>
+            <h3 class="title-list">
+                {{dataItem.AfiliadosCliente.Cliente.Tercero.Nombre}}
+            </h3>
+            <div>
+                <label>Valor:</label>
+                {{dataItem.Valor | currency: $ : 2}}
+            </div>
+            <div>
+                <label>Fecha:</label>
+                {{dataItem.Fecha | date : 'dd-MM-yyyy'}}
+            </div>
+        </div>
+    </aclass="container>
+</script>

@@ -1,0 +1,38 @@
+﻿
+<div class="row-fluid banner-ventas">
+    <img src="css\images\compra.png" />
+</div>
+
+<div style="padding: 1em">
+    <div class="col-md-12" id="divVenta">
+
+        <!--<input class="btn btn-info" type="button" name="btnSca" value="Scanear" ng-click="scan()" />-->
+        <div class="result-area ch60">
+            <div class="results">
+                <div id="result" class="desc"></div>
+            </div>
+            <div class="separator"></div>
+        </div>
+
+        <!-- NO MAQUETAR TODAVIA -->
+        <div class="form-group">
+            <label>Valor</label>
+            <input type="text" readonly data-ng-model="compra.Valor" class="form-control" id="txtValor" placeholder="Valor">
+        </div>
+        <div class="form-group">
+            <label>Aliado</label>
+            <input type="text" readonly data-ng-model="aliado.Cliente.Tercero.Nombre" class="form-control" id="txtAliado" placeholder="Aliado">
+        </div>
+        <div class="form-group">
+            <label>Beneficiario</label>
+            <input type="text" readonly data-ng-model="beneficiario.Tercero.Nombre" class="form-control" id="txtBeneficiario" placeholder="Beneficiario">
+        </div>
+        <div id="buttons">
+            <input class="btn btn-primary btn-lg btn-block" type="button" name="confirmarCompra" value="Confirmar compra" ng-click="confirmarCompra()" />
+        </div>
+        <span>{{text}}</span>
+
+    </div>
+</div>
+
+

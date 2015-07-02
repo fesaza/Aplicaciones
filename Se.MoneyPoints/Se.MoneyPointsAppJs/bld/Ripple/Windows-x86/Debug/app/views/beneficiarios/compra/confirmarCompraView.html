@@ -1,0 +1,43 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\compra.png" />
+</div>
+<div class="container" ng-switch on="canSolicitarPin">
+    <div ng-switch-when="false">
+        Selecciona con qué puntos quieres pagar:
+        <kendo-mobile-list-view id="gridCuentasBeneficiario" options="cuentasBeneficiarioOptionsCompra" />
+    </div>
+    <div ng-switch-when="true">
+        <div class="form-group">
+            <label>Programa seleccionado</label>
+            <input type="text" readonly data-ng-model="programa.Cliente.Tercero.Nombre" class="form-control" id="formRegBen" placeholder="Programa">
+        </div>
+
+        <div class="form-group">
+            <label>Ingrese su PIN de seguridad:</label>
+            <input type="password" required data-ng-model="pin" maxlength="4" class="form-control" id="formRegPin" placeholder="PIN">
+        </div>
+
+        <div id="buttons">
+            <button class="btn btn-info" ng-click="finalizarCompra()">Finalizar</button>
+            <button class="btn btn-danger" ng-click="regresarPrograma()">Regresar</button>
+        </div>
+    </div>
+</div>
+
+<script id="tmpCuentasBeneficiario" type="text/x-kendo-tmpl">
+    <a class="container list-style" ng-click="solicitarPin(dataItem)">
+        <div ng-click="solicitarPin(dataItem)">
+            <h3 class="title-list">
+                {{dataItem.Cliente.Tercero.Nombre}}
+                </h3>
+                <div>
+                    <label>Saldo:</label>
+                    {{dataItem.Saldo | currency : $ : 2}}
+                </div>
+                <div>
+                    <label>Puntos:</label>
+                    {{dataItem.Puntos | number: 2}}
+                </div>
+</div>
+    </a>
+</script>

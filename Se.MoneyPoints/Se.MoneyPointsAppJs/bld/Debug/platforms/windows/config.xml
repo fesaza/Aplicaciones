@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">
+    <preference name="windows-target-version" value="8.0" />
+    <name>Se.MoneyPointsAppJs</name>
+    <description>Money Points App</description>
+    <author email="felipe.salgado@softwareestrategico.com" href="http://softwareestrategico.com">Money Points Team </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="windows-target-version" value="8.1" />
+    <preference name="windows-phone-target-version" value="8.1" />
+    <vs:plugin name="org.apache.cordova.camera" version="0.3.2" />
+    <vs:plugin name="com.phonegap.plugins.barcodescanner" />
+    <vs:platformSpecificValues />
+</widget>

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle Cliente</title>
+
+    <link href="css/personal.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/kendo.dataviz.default.min.css" rel="stylesheet" />
+    <link href="css/kendo.dataviz.min.css" rel="stylesheet" />
+    <link href="css/kendo.default.min.css" rel="stylesheet" />
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/kendo.all.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <p id="center"> Detalle Clientes </p>
+    </div>
+
+    <div id="example">
+        <div id="grid"></div>
+        <script>
+                $(document).ready(function() {
+                    $("#grid").kendoGrid({
+                        dataSource: {
+                            type: "odata",
+                            transport: {
+                                read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                            },
+                            schema: {
+                                model: {
+                                    fields: {
+                                        Nombre: { type: "text" },
+                                        Nit: { type: "number" },
+                                        Direccion: { type: "text" },
+                                    }
+                                }
+                            },
+                            pageSize: 20,
+                            serverPaging: true,
+                            serverFiltering: true,
+                            serverSorting: true
+                        },
+                        height: 350,
+                        filterable: true,
+                        sortable: true,
+                        pageable: true,
+                        columns: [{
+                                field: "Nombre",
+                                title: "Nombre",
+                                width: 20
+                            },
+                            {
+                                field: "Nit",
+                                title: "Nit",
+                                width: 20
+                            }, {
+                                field: "Direccion",
+                                title: "Dirección",
+                                width: 20
+
+                            }, {
+                                field: "Opcion",
+                                title: "Opción",
+                                width: 10
+
+                            }
+                        ]
+                    });
+                });
+        </script>
+    </div>
+
+
+</body>
+</html>

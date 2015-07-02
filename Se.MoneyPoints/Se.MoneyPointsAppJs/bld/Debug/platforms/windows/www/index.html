@@ -1,0 +1,97 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <!--Para iOS-->
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+    <title>MoneyPointsAppJs</title>
+
+    <!-- Se.MoneyPointsAppJs references -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/pnotify.custom.min.css" />
+
+    <link rel="stylesheet" href="css/kendo.common.min.css" />
+    <link rel="stylesheet" href="css/kendo.silver.min.css" />
+    <link rel="stylesheet" href="css/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="css/kendo.dataviz.bootstrap.min.css" />
+    <link href="css/kendo.silver.mobile.min.css" rel="stylesheet" />
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/simple-sidebar.css" />
+
+
+
+</head>
+
+<body>
+    <div ng-app="moneyPointsApp">
+        <kendo-mobile-view ng-controller="indexCtrl">
+
+            <div ng-include="'menu.html'" ng-show="hideMenus" style="align-content:center" class="bs-box" ng-controller="indexCtrl">
+            </div>
+            
+            <div ng-view>
+            </div>
+        </kendo-mobile-view>
+    </div>
+
+    <!--Scripts de terceros-->
+    <script src="scripts/jquery-2.1.3.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/pnotify.custom.min.js"></script>
+    <script src="scripts/jquery.qrcode-0.11.0.js"></script>
+    <script src="scripts/angular.js"></script>
+
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-cookies.js"></script>
+    <script src="scripts/kendo.all.min.js"></script>
+    <script src="scripts/jquery.signalR-2.2.0.js"></script>
+
+    <!--<script src="http://localhost/moneypoints/signalr/hubs"></script>-->
+    <script src="http://aplicaciones.softwareestrategico.com:90/moneypoints/signalr/hubs"></script>
+    <!--<script src="scripts/kendo.angular.min.js"></script>-->
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+
+    <!--Scripts de la aplicación-->
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/cbpFWTabs.js"></script>
+
+    <script src="app/services/AfiliadosService.js"></script>
+    <script src="app/services/AuthenticationService.js"></script>
+    <script src="app/services/authorizationService.js"></script>
+    <script src="app/controllers/login/loginController.js"></script>
+    <script src="app/controllers/clientes/clientesController.js"></script>
+    <script src="app/controllers/clientes/clientesDetailsController.js"></script>
+    <script src="app/controllers/beneficiarios/beneficiariosController.js"></script>
+    <script src="app/controllers/beneficiarios/beneficiariosDetailsController.js"></script>
+    <script src="app/controllers/beneficiarios/detallesCuentaBeneficiarioController.js"></script>
+    <script src="app/controllers/aliados/ventaController.js"></script>
+    <script src="app/controllers/conciliaciones/conciliacionesController.js"></script>
+    <script src="app/controllers/conciliaciones/conciliacionesDetailsController.js"></script>
+    <script src="app/controllers/beneficiarios/compraController.js"></script>
+    <script src="app/controllers/beneficiarios/confirmarCompraController.js"></script>
+    <script src="app/services/beneficiariosClienteService.js"></script>
+    <script src="app/services/beneficiariosPuntosService.js"></script>
+    <script src="app/services/conciliacionesService.js"></script>
+    <script src="app/services/clientesService.js"></script>
+    <script src="app/services/afiliadosClientesService.js"></script>
+    <script src="app/services/beneficiariosService.js"></script>
+    <script src="app/services/ventaService.js"></script>
+    <script src="app/services/tercerosService.js"></script>
+    <script src="app/services/equivalenciasService.js"></script>
+    <script src="app/controllers/beneficiarios/seguridadController.js"></script>
+    <script src="app/controllers/aliados/recibirConciliacionesController.js"></script>
+    <script src="app/controllers/clientes/afiliadosClienteController.js"></script>
+    <script src="app/controllers/clientes/beneficiariosClienteController.js"></script>
+    <script src="app/controllers/clientes/cargarPuntosController.js"></script>
+    <script src="app/controllers/clientes/equivalenciasController.js"></script>
+</body>
+</html>

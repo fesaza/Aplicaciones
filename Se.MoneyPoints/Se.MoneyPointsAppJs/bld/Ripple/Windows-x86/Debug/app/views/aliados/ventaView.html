@@ -1,0 +1,37 @@
+﻿
+
+
+<div class="row-fluid banner-ventas">
+    <img src="css\images\ventas.png" />
+</div>
+<div class="row-fluid form-cliente">
+    <div class="col-md-12">
+        <div class="form-group" id="divQR">
+
+        </div>
+        <form  class="css-form" ng-submit="generarQR()" name="form" role="form">
+            <div class="form-group">
+                <label>Valor</label>
+                <input type="text"  data-ng-model="venta.Valor" class="form-control" id="txtValor" name="txtValor" placeholder="Valor" required  ng-pattern="onlyNumber">
+                <span ng-show="form.txtValor.$error.pattern" class="help-block">verifique que el valor sea numérico</span>
+            </div>
+            <div class="form-group">
+                <label>Cedula cliente</label>
+                <input type="text" data-ng-model="venta.Identificacion" class="form-control" name="txtCedula" id="txtCedula" placeholder="Cédula" required>
+            </div>
+
+
+            <div class="form-group" ng-show="terceroBeneficiario">
+                <label>Nombre</label>
+                <input type="text" ng-model="terceroBeneficiario.Nombre" class="form-control" id="formRegCli" placeholder="Nombre" readonly>
+            </div>
+            <div class="form-group" ng-show="terceroBeneficiario">
+                <label>Apellidos</label>
+                <input type="text" ng-model="terceroBeneficiario.Apellidos" class="form-control" id="formRegCli" placeholder="Apellidos" readonly>
+            </div>
+            <div id="buttons1">
+                <input ng-show="form.$valid" class="btn btn-primary btn-lg btn-block" type="button" name="generarQR" value="Generar QR" ng-click="generarQR()" />
+            </div>
+        </form>
+    </div>
+</div>

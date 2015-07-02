@@ -1,0 +1,40 @@
+﻿
+
+<div class="row-fluid banner-ventas">
+    <img src="css\images\beneficiario.png" />
+</div>
+<div class="container">
+    <p class="center"> Listar beneficiarios</p>
+
+    <button ng-click="goPath('/beneficiariosDetails/0')" class="btn btn-primary btn-lg btn-block">Nuevo beneficiario</button>
+    <div id="space"></div>
+</div>
+
+
+
+
+<div id="example">
+
+    <kendo-mobile-list-view id="gridBeneficiarios" options="beneficiariosGridOptions">
+    </kendo-mobile-list-view>
+
+</div>
+
+<div id="space"></div>
+
+
+<script id="rowBeneficiariosTemplate2" type="text/x-kendo-tmpl">
+    <a href="\#/beneficiariosDetails/{{dataItem.BeneficiarioId}}">
+        <tr>
+            <td>
+                {{dataItem.Tercero.Nombre}}
+            </td>
+            <td>
+                {{dataItem.Tercero.Direccion}}
+            </td>
+            <td>
+                {{dataItem.Tercero.Telefono}}
+            </td>
+        </tr>
+    </a>
+</script>

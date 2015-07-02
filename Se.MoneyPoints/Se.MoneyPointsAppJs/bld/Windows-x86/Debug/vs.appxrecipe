@@ -1,0 +1,929 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SE32</Machine>
+    <WindowsUser>felipe.salgado</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>70C2AC6F3150E84AC038C3A9111F71845F8B3EE12C399754108EBE98F5FBC26D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e_1.0.0.0_x86__54dbk1tt7zbhy</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e_54dbk1tt7zbhy!io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e</RegisteredUserModeAppID>
+    <RegisteredPackageID>io.cordova.myapp36f28e01bb024bc9839ee024f20fa87e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova Temp Cert</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\build\windows\debug\x86\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-16T21:48:14.747</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\plugins\com.phonegap.plugins.barcodescanner\WinRTBarcodeReader.winmd">
+      <PackagePath>WinRTBarcodeReader.winmd</PackagePath>
+      <Modified>2015-06-16T21:47:32.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
+      <PackagePath>ZXing.winmd</PackagePath>
+      <Modified>2015-06-16T21:47:32.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-22T20:02:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-01-29T20:11:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\editor.png">
+      <PackagePath>www\css\Bootstrap\editor.png</PackagePath>
+      <Modified>2015-06-16T21:47:37.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\imagebrowser.png">
+      <PackagePath>www\css\Bootstrap\imagebrowser.png</PackagePath>
+      <Modified>2015-06-16T21:47:37.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\markers.png">
+      <PackagePath>www\css\Bootstrap\markers.png</PackagePath>
+      <Modified>2015-06-16T21:47:37.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\markers_2x.png">
+      <PackagePath>www\css\Bootstrap\markers_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:37.945</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\sprite.png">
+      <PackagePath>www\css\Bootstrap\sprite.png</PackagePath>
+      <Modified>2015-06-16T21:47:37.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\sprite_2x.png">
+      <PackagePath>www\css\Bootstrap\sprite_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\sprite_kpi.png">
+      <PackagePath>www\css\Bootstrap\sprite_kpi.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\sprite_kpi_2x.png">
+      <PackagePath>www\css\Bootstrap\sprite_kpi_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\back.png">
+      <PackagePath>www\css\images\back.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\beneficiario.png">
+      <PackagePath>www\css\images\beneficiario.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\clientes.png">
+      <PackagePath>www\css\images\clientes.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.577</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\compra.png">
+      <PackagePath>www\css\images\compra.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\conciliacion-entradas.png">
+      <PackagePath>www\css\images\conciliacion-entradas.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\conciliacion-envios.png">
+      <PackagePath>www\css\images\conciliacion-envios.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\equivalencia.png">
+      <PackagePath>www\css\images\equivalencia.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\estado-cuenta.png">
+      <PackagePath>www\css\images\estado-cuenta.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\Informacion-beneficiario.png">
+      <PackagePath>www\css\images\Informacion-beneficiario.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\logo-mp.png">
+      <PackagePath>www\css\images\logo-mp.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.770</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\mp-logo.png">
+      <PackagePath>www\css\images\mp-logo.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\registro.png">
+      <PackagePath>www\css\images\registro.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\ventas.png">
+      <PackagePath>www\css\images\ventas.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\wp8_icons.png">
+      <PackagePath>www\css\images\wp8_icons.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.840</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\wp8_inverseicons.png">
+      <PackagePath>www\css\images\wp8_inverseicons.png</PackagePath>
+      <Modified>2015-06-16T21:47:38.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\editor.png">
+      <PackagePath>www\css\Silver\editor.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.266</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\imagebrowser.png">
+      <PackagePath>www\css\Silver\imagebrowser.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\markers.png">
+      <PackagePath>www\css\Silver\markers.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\markers_2x.png">
+      <PackagePath>www\css\Silver\markers_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.363</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\sprite.png">
+      <PackagePath>www\css\Silver\sprite.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\sprite_2x.png">
+      <PackagePath>www\css\Silver\sprite_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\sprite_kpi.png">
+      <PackagePath>www\css\Silver\sprite_kpi.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\sprite_kpi_2x.png">
+      <PackagePath>www\css\Silver\sprite_kpi_2x.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.457</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\brushed-metal.png">
+      <PackagePath>www\css\textures\brushed-metal.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots1.png">
+      <PackagePath>www\css\textures\dots1.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots10.png">
+      <PackagePath>www\css\textures\dots10.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots11.png">
+      <PackagePath>www\css\textures\dots11.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots12.png">
+      <PackagePath>www\css\textures\dots12.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.521</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots13.png">
+      <PackagePath>www\css\textures\dots13.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.531</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots2.png">
+      <PackagePath>www\css\textures\dots2.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots3.png">
+      <PackagePath>www\css\textures\dots3.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.548</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots4.png">
+      <PackagePath>www\css\textures\dots4.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots5.png">
+      <PackagePath>www\css\textures\dots5.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots6.png">
+      <PackagePath>www\css\textures\dots6.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots7.png">
+      <PackagePath>www\css\textures\dots7.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.590</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots8.png">
+      <PackagePath>www\css\textures\dots8.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\dots9.png">
+      <PackagePath>www\css\textures\dots9.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\glass-lighter.png">
+      <PackagePath>www\css\textures\glass-lighter.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\glass.png">
+      <PackagePath>www\css\textures\glass.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\highlight.png">
+      <PackagePath>www\css\textures\highlight.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.635</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\hsv-gradient.png">
+      <PackagePath>www\css\textures\hsv-gradient.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\hue.png">
+      <PackagePath>www\css\textures\hue.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.791</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\leather1.png">
+      <PackagePath>www\css\textures\leather1.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\leather2.png">
+      <PackagePath>www\css\textures\leather2.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\noise.png">
+      <PackagePath>www\css\textures\noise.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe1.png">
+      <PackagePath>www\css\textures\stripe1.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe2.png">
+      <PackagePath>www\css\textures\stripe2.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe3.png">
+      <PackagePath>www\css\textures\stripe3.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe4.png">
+      <PackagePath>www\css\textures\stripe4.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe5.png">
+      <PackagePath>www\css\textures\stripe5.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.880</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\stripe6.png">
+      <PackagePath>www\css\textures\stripe6.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\transparency.png">
+      <PackagePath>www\css\textures\transparency.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.900</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\textures\transtexture.png">
+      <PackagePath>www\css\textures\transtexture.png</PackagePath>
+      <Modified>2015-06-16T21:47:39.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\app.js">
+      <PackagePath>www\app\app.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\aliados\recibirConciliacionesController.js">
+      <PackagePath>www\app\controllers\aliados\recibirConciliacionesController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\aliados\ventaController.js">
+      <PackagePath>www\app\controllers\aliados\ventaController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\beneficiariosController.js">
+      <PackagePath>www\app\controllers\beneficiarios\beneficiariosController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\beneficiariosDetailsController.js">
+      <PackagePath>www\app\controllers\beneficiarios\beneficiariosDetailsController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.354</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\compraController.js">
+      <PackagePath>www\app\controllers\beneficiarios\compraController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\confirmarCompraController.js">
+      <PackagePath>www\app\controllers\beneficiarios\confirmarCompraController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\detallesCuentaBeneficiarioController.js">
+      <PackagePath>www\app\controllers\beneficiarios\detallesCuentaBeneficiarioController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.452</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\beneficiarios\seguridadController.js">
+      <PackagePath>www\app\controllers\beneficiarios\seguridadController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\afiliadosClienteController.js">
+      <PackagePath>www\app\controllers\clientes\afiliadosClienteController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\beneficiariosClienteController.js">
+      <PackagePath>www\app\controllers\clientes\beneficiariosClienteController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.547</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\cargarPuntosController.js">
+      <PackagePath>www\app\controllers\clientes\cargarPuntosController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.589</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\clientesController.js">
+      <PackagePath>www\app\controllers\clientes\clientesController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\clientesDetailsController.js">
+      <PackagePath>www\app\controllers\clientes\clientesDetailsController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.640</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\clientes\equivalenciasController.js">
+      <PackagePath>www\app\controllers\clientes\equivalenciasController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\conciliaciones\conciliacionesController.js">
+      <PackagePath>www\app\controllers\conciliaciones\conciliacionesController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\conciliaciones\conciliacionesDetailsController.js">
+      <PackagePath>www\app\controllers\conciliaciones\conciliacionesDetailsController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\controllers\login\loginController.js">
+      <PackagePath>www\app\controllers\login\loginController.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.767</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\afiliadosClientesService.js">
+      <PackagePath>www\app\services\afiliadosClientesService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\AfiliadosService.js">
+      <PackagePath>www\app\services\AfiliadosService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\AuthenticationService.js">
+      <PackagePath>www\app\services\AuthenticationService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\authorizationService.js">
+      <PackagePath>www\app\services\authorizationService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\beneficiariosClienteService.js">
+      <PackagePath>www\app\services\beneficiariosClienteService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\beneficiariosPuntosService.js">
+      <PackagePath>www\app\services\beneficiariosPuntosService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.948</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\beneficiariosService.js">
+      <PackagePath>www\app\services\beneficiariosService.js</PackagePath>
+      <Modified>2015-06-16T21:47:36.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\clientesService.js">
+      <PackagePath>www\app\services\clientesService.js</PackagePath>
+      <Modified>2015-06-16T21:47:37.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\conciliacionesService.js">
+      <PackagePath>www\app\services\conciliacionesService.js</PackagePath>
+      <Modified>2015-06-16T21:47:37.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\equivalenciasService.js">
+      <PackagePath>www\app\services\equivalenciasService.js</PackagePath>
+      <Modified>2015-06-16T21:47:37.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\tercerosService.js">
+      <PackagePath>www\app\services\tercerosService.js</PackagePath>
+      <Modified>2015-06-16T21:47:37.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\services\ventaService.js">
+      <PackagePath>www\app\services\ventaService.js</PackagePath>
+      <Modified>2015-06-16T21:47:37.084</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2015-06-16T21:47:42.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.470</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\BarcodeScannerProxy.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\src\windows\CameraProxy.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.camera\www\Camera.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\Camera.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraConstants.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraConstants.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.973</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js">
+      <PackagePath>www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js</PackagePath>
+      <Modified>2015-06-16T21:47:43.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-cookies.js">
+      <PackagePath>www\scripts\angular-cookies.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.020</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-cookies.min.js">
+      <PackagePath>www\scripts\angular-cookies.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-mocks.js">
+      <PackagePath>www\scripts\angular-mocks.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-route.js">
+      <PackagePath>www\scripts\angular-route.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-route.min.js">
+      <PackagePath>www\scripts\angular-route.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular.js">
+      <PackagePath>www\scripts\angular.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular.min.js">
+      <PackagePath>www\scripts\angular.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.367</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\bootstrap.js">
+      <PackagePath>www\scripts\bootstrap.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\bootstrap.min.js">
+      <PackagePath>www\scripts\bootstrap.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\cbpFWTabs.js">
+      <PackagePath>www\scripts\cbpFWTabs.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.468</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\index.js">
+      <PackagePath>www\scripts\index.js</PackagePath>
+      <Modified>2015-06-16T21:47:40.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery-2.1.3.intellisense.js">
+      <PackagePath>www\scripts\jquery-2.1.3.intellisense.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery-2.1.3.js">
+      <PackagePath>www\scripts\jquery-2.1.3.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery-2.1.3.min.js">
+      <PackagePath>www\scripts\jquery-2.1.3.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.js">
+      <PackagePath>www\scripts\jquery.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.790</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.min.js">
+      <PackagePath>www\scripts\jquery.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.qrcode-0.11.0.js">
+      <PackagePath>www\scripts\jquery.qrcode-0.11.0.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.qrcode-0.11.0.min.js">
+      <PackagePath>www\scripts\jquery.qrcode-0.11.0.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.signalR-2.2.0.js">
+      <PackagePath>www\scripts\jquery.signalR-2.2.0.js</PackagePath>
+      <Modified>2015-06-16T21:47:44.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery.signalR-2.2.0.min.js">
+      <PackagePath>www\scripts\jquery.signalR-2.2.0.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:45.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\kendo.all.min.js">
+      <PackagePath>www\scripts\kendo.all.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:45.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\kendo.angular.min.js">
+      <PackagePath>www\scripts\kendo.angular.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:45.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+      <Modified>2015-06-16T21:47:42.765</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\pnotify.custom.min.js">
+      <PackagePath>www\scripts\pnotify.custom.min.js</PackagePath>
+      <Modified>2015-06-16T21:47:45.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+      <Modified>2015-06-16T21:47:42.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\home.html">
+      <PackagePath>www\app\home.html</PackagePath>
+      <Modified>2015-06-16T21:47:36.790</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\aliados\conciliacionesDetailView.html">
+      <PackagePath>www\app\views\aliados\conciliacionesDetailView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\aliados\ventaView.html">
+      <PackagePath>www\app\views\aliados\ventaView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.143</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\beneficiariosDetailsView.html">
+      <PackagePath>www\app\views\beneficiarios\beneficiariosDetailsView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\beneficiariosView.html">
+      <PackagePath>www\app\views\beneficiarios\beneficiariosView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.226</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\compra\compraView.html">
+      <PackagePath>www\app\views\beneficiarios\compra\compraView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\compra\confirmarCompraView.html">
+      <PackagePath>www\app\views\beneficiarios\compra\confirmarCompraView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\detallesCuentaBeneficiario.html">
+      <PackagePath>www\app\views\beneficiarios\detallesCuentaBeneficiario.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.348</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\estadoCuentasTemplate.html">
+      <PackagePath>www\app\views\beneficiarios\estadoCuentasTemplate.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\infoBasicaTemplate.html">
+      <PackagePath>www\app\views\beneficiarios\infoBasicaTemplate.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\beneficiarios\seguridadView.html">
+      <PackagePath>www\app\views\beneficiarios\seguridadView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\afiliadosClienteView.html">
+      <PackagePath>www\app\views\clientes\afiliadosClienteView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\beneficiariosClienteView.html">
+      <PackagePath>www\app\views\clientes\beneficiariosClienteView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\cargarPuntosView.html">
+      <PackagePath>www\app\views\clientes\cargarPuntosView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\clientesDetailsView.html">
+      <PackagePath>www\app\views\clientes\clientesDetailsView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\clientesView.html">
+      <PackagePath>www\app\views\clientes\clientesView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\conciliaciones\conciliacionesDetailsView.html">
+      <PackagePath>www\app\views\clientes\conciliaciones\conciliacionesDetailsView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\conciliaciones\conciliacionesNewView.html">
+      <PackagePath>www\app\views\clientes\conciliaciones\conciliacionesNewView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\conciliaciones\conciliacionesView.html">
+      <PackagePath>www\app\views\clientes\conciliaciones\conciliacionesView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.600</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\clientes\equivalenciasView.html">
+      <PackagePath>www\app\views\clientes\equivalenciasView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\app\views\login\loginView.html">
+      <PackagePath>www\app\views\login\loginView.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\AutoComplete.html">
+      <PackagePath>www\AutoComplete.html</PackagePath>
+      <Modified>2015-06-16T21:47:37.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\DetalleCliente.html">
+      <PackagePath>www\DetalleCliente.html</PackagePath>
+      <Modified>2015-06-16T21:47:39.954</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2015-06-16T21:47:40.210</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\menu.html">
+      <PackagePath>www\menu.html</PackagePath>
+      <Modified>2015-06-16T21:47:40.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Project_Readme.html">
+      <PackagePath>www\Project_Readme.html</PackagePath>
+      <Modified>2015-06-16T21:47:40.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Content\bootstrap-theme.css">
+      <PackagePath>www\Content\bootstrap-theme.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Content\bootstrap-theme.min.css">
+      <PackagePath>www\Content\bootstrap-theme.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Content\bootstrap.css">
+      <PackagePath>www\Content\bootstrap.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Content\bootstrap.min.css">
+      <PackagePath>www\Content\bootstrap.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.451</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+      <Modified>2015-06-16T21:47:38.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.bootstrap.min.css">
+      <PackagePath>www\css\kendo.bootstrap.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.bootstrap.mobile.min.css">
+      <PackagePath>www\css\kendo.bootstrap.mobile.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.common-bootstrap.core.min.css">
+      <PackagePath>www\css\kendo.common-bootstrap.core.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.common-bootstrap.min.css">
+      <PackagePath>www\css\kendo.common-bootstrap.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.common.core.min.css">
+      <PackagePath>www\css\kendo.common.core.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.common.min.css">
+      <PackagePath>www\css\kendo.common.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.dataviz.bootstrap.min.css">
+      <PackagePath>www\css\kendo.dataviz.bootstrap.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.dataviz.default.min.css">
+      <PackagePath>www\css\kendo.dataviz.default.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.dataviz.min.css">
+      <PackagePath>www\css\kendo.dataviz.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.686</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.dataviz.silver.min.css">
+      <PackagePath>www\css\kendo.dataviz.silver.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.default.min.css">
+      <PackagePath>www\css\kendo.default.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.746</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.mobile.all.min.css">
+      <PackagePath>www\css\kendo.mobile.all.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.silver.min.css">
+      <PackagePath>www\css\kendo.silver.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\kendo.silver.mobile.min.css">
+      <PackagePath>www\css\kendo.silver.mobile.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.833</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\pnotify.custom.min.css">
+      <PackagePath>www\css\pnotify.custom.min.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\simple-sidebar.css">
+      <PackagePath>www\css\simple-sidebar.css</PackagePath>
+      <Modified>2015-06-16T21:47:43.863</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\indeterminate.gif">
+      <PackagePath>www\css\Bootstrap\indeterminate.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\loading-image.gif">
+      <PackagePath>www\css\Bootstrap\loading-image.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\loading.gif">
+      <PackagePath>www\css\Bootstrap\loading.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\loading_2x.gif">
+      <PackagePath>www\css\Bootstrap\loading_2x.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.925</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\slider-h.gif">
+      <PackagePath>www\css\Bootstrap\slider-h.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Bootstrap\slider-v.gif">
+      <PackagePath>www\css\Bootstrap\slider-v.gif</PackagePath>
+      <Modified>2015-06-16T21:47:37.966</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\indeterminate.gif">
+      <PackagePath>www\css\Silver\indeterminate.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.292</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\loading-image.gif">
+      <PackagePath>www\css\Silver\loading-image.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.318</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\loading.gif">
+      <PackagePath>www\css\Silver\loading.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.327</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\loading_2x.gif">
+      <PackagePath>www\css\Silver\loading_2x.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\slider-h.gif">
+      <PackagePath>www\css\Silver\slider-h.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\Silver\slider-v.gif">
+      <PackagePath>www\css\Silver\slider-v.gif</PackagePath>
+      <Modified>2015-06-16T21:47:39.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSans-Bold.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSans-Bold.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSans-BoldOblique.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSans-BoldOblique.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSans-Oblique.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSans-Oblique.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSans.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSans.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSansMono-Bold.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSansMono-Bold.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.258</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSansMono-Oblique.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSansMono-Oblique.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.323</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSansMono.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSansMono.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.363</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSerif-Bold.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSerif-Bold.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSerif-Italic.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSerif-Italic.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\DejaVuSerif.ttf">
+      <PackagePath>www\css\fonts\DejaVu\DejaVuSerif.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\kendoui.ttf">
+      <PackagePath>www\css\images\kendoui.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:38.726</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.ttf</PackagePath>
+      <Modified>2015-06-16T21:47:40.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\fonts\DejaVu\LICENSE">
+      <PackagePath>www\css\fonts\DejaVu\LICENSE</PackagePath>
+      <Modified>2015-06-16T21:47:38.528</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\kendoui.svg">
+      <PackagePath>www\css\images\kendoui.svg</PackagePath>
+      <Modified>2015-06-16T21:47:38.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.svg</PackagePath>
+      <Modified>2015-06-16T21:47:40.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\css\images\kendoui.woff">
+      <PackagePath>www\css\images\kendoui.woff</PackagePath>
+      <Modified>2015-06-16T21:47:38.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.woff</PackagePath>
+      <Modified>2015-06-16T21:47:40.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.eot</PackagePath>
+      <Modified>2015-06-16T21:47:40.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\packages.config">
+      <PackagePath>www\packages.config</PackagePath>
+      <Modified>2015-06-16T21:47:40.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-cookies.min.js.map">
+      <PackagePath>www\scripts\angular-cookies.min.js.map</PackagePath>
+      <Modified>2015-06-16T21:47:40.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular-route.min.js.map">
+      <PackagePath>www\scripts\angular-route.min.js.map</PackagePath>
+      <Modified>2015-06-16T21:47:40.491</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\angular.min.js.map">
+      <PackagePath>www\scripts\angular.min.js.map</PackagePath>
+      <Modified>2015-06-16T21:47:40.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\scripts\jquery-2.1.3.min.map">
+      <PackagePath>www\scripts\jquery-2.1.3.min.map</PackagePath>
+      <Modified>2015-06-16T21:47:41.230</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\www\Se.MoneyPointsAppJs.jsproj.vspscc">
+      <PackagePath>www\Se.MoneyPointsAppJs.jsproj.vspscc</PackagePath>
+      <Modified>2015-06-16T21:47:42.739</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+      <Modified>2015-06-16T21:47:46.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPointsAppJs\bld\Debug\platforms\windows\build\windows\debug\x86\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-06-16T21:47:49.885</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

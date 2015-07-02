@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MoneyPoints_dlloModelStoreContainer" CdmEntityContainer="MoneyPoints_dlloEntities">
+    <EntitySetMapping Name="Afiliados">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Afiliado">
+        <MappingFragment StoreEntitySet="Afiliados">
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AfiliadosClientes">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.AfiliadosCliente">
+        <MappingFragment StoreEntitySet="AfiliadosClientes">
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="AfiliadosClienteId" ColumnName="AfiliadosClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asegurables">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Asegurable">
+        <MappingFragment StoreEntitySet="Asegurables">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="AsegurableId" ColumnName="AsegurableId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AsegurablesRoles">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.AsegurablesRole">
+        <MappingFragment StoreEntitySet="AsegurablesRoles">
+          <ScalarProperty Name="AsegurableId" ColumnName="AsegurableId" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+          <ScalarProperty Name="AsegurablesRolId" ColumnName="AsegurablesRolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Beneficiarios">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Beneficiario">
+        <MappingFragment StoreEntitySet="Beneficiarios">
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+          <ScalarProperty Name="BeneficiarioId" ColumnName="BeneficiarioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BeneficiariosClientes">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosCliente">
+        <MappingFragment StoreEntitySet="BeneficiariosClientes">
+          <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+          <ScalarProperty Name="Saldo" ColumnName="Saldo" />
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="BeneficiarioId" ColumnName="BeneficiarioId" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BeneficiariosClientesCompras">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosClientesCompra">
+        <MappingFragment StoreEntitySet="BeneficiariosClientesCompras">
+          <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+          <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+          <ScalarProperty Name="BeneficiariosClientesCompraId" ColumnName="BeneficiariosClientesCompraId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BeneficiariosPuntos">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosPunto">
+        <MappingFragment StoreEntitySet="BeneficiariosPuntos">
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+          <ScalarProperty Name="BeneficiariosPuntoId" ColumnName="BeneficiariosPuntoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Cliente">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ProgramaPrivado" ColumnName="ProgramaPrivado" />
+          <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compras">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Compra">
+        <MappingFragment StoreEntitySet="Compras">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="NumeroFactura" ColumnName="NumeroFactura" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+          <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conciliaciones">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Conciliacione">
+        <MappingFragment StoreEntitySet="Conciliaciones">
+          <ScalarProperty Name="NroComprobante" ColumnName="NroComprobante" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="AfiliadosClienteId" ColumnName="AfiliadosClienteId" />
+          <ScalarProperty Name="ConciliacionId" ColumnName="ConciliacionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetallesCompras">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.DetallesCompra">
+        <MappingFragment StoreEntitySet="DetallesCompras">
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+          <ScalarProperty Name="DetallesCompraId" ColumnName="DetallesCompraId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equivalencias">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Equivalencia">
+        <MappingFragment StoreEntitySet="Equivalencias">
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+          <ScalarProperty Name="EquivalenciaId" ColumnName="EquivalenciaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terceros">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Tercero">
+        <MappingFragment StoreEntitySet="Terceros">
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

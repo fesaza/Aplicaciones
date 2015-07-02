@@ -1,0 +1,25 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\Equivalencia.jpg" />
+</div>
+
+
+<div>
+    <form name="form" id="form" ng-submit="guardarEquivalencia()" class="css-form form-cliente" role="form">
+        <div class="form-group">
+            <label>Puntos</label>
+            <input type="number" size="" required ng-model="equivalencia.Puntos" class="form-control" id="txtPuntos"
+                   name="txtPuntos" placeholder="Razón Social">
+            <span ng-show="form.txtPuntos.$dirty && form.txtPuntos.$error.required" class="help-block">Puntos son requeridos</span>
+        </div>
+        <div class="form-group">
+            <label>Valor</label>
+            <input type="number" required ng-model="equivalencia.Valor" class="form-control" id="txtValor"
+                   name="txtValor" placeholder="Valor">
+            <span ng-show="form.txtValor.$dirty && form.txtValor.$error.required" class="help-block">Valor es requerido</span>
+        </div>
+
+        <div id="buttons">
+            <button type="submit" ng-disabled="form.$invalid" class="btn btn-info">Guardar</button>
+        </div>
+    </form>
+</div>

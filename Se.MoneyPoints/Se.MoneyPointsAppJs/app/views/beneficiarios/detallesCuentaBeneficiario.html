@@ -1,0 +1,66 @@
+﻿<div>
+    <center>Detalles cuenta </center>
+    <div>
+        Puntos cargados
+        <br />
+
+        <kendo-mobile-list-view id="gridHistorialPtsBeneficiarios" options="historialPtsBeneficiarioOptions" />
+
+    </div>
+    <div>
+        Compras realizadas
+
+        <kendo-mobile-list-view id="gridHistorialTxBeneficiarios" options="historialTxBeneficiarioOptions">
+            
+        </kendo-mobile-list-view>
+
+    </div>
+</div>
+
+<style>
+
+    .product{
+        
+    }
+
+    .product h3 {
+        font-size: 1.3em;
+        line-height: 1.4em;
+        margin: 0;
+        padding: 0;
+        height: 1.3em;
+        overflow: hidden;
+    }
+
+    .product p {
+        font-size: 1em;
+        margin: 0;
+        padding: .3em 0 0;
+    }
+</style>
+
+<script id="tmpdetallesCtaBeneficiario" type="text/x-kendo-tmpl">
+    <tr>
+        <td>
+            {{dataItem.Fecha | date : 'dd-MM-yyyy'}}
+        </td>
+        <td>
+            {{dataItem.Puntos | number : 0}}
+        </td>
+        <td>
+            {{dataItem.Valor | currency: $ : 2}}
+        </td>
+    </tr>
+</script>
+
+
+
+<script id="tmpHistorialTxBeneficiario" type="text/x-kendo-tmpl">
+    <div class="product">
+        <h3>{{dataItem.Compra.Afiliado.Cliente.Tercero.Nombre}}</h3>
+        <p>
+            {{dataItem.Compra.Fecha | date : 'dd-MM-yyyy'}} -
+            {{dataItem.Compra.Valor | currency: $ : 2}}
+        </p>
+    </div>
+</script>

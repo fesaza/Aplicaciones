@@ -1,0 +1,76 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\clientes.png" />
+</div>
+
+<form name="form" ng-submit="guardarCliente()" class="css-form form-cliente" role="form">
+    <div id="divDetailCliente">
+        <div>
+            <div>
+                <div class="col-md-12">
+                    <div class="space1"></div>
+
+                    <div class="form-group">
+                        <label>Razón Social</label>
+                        <input type="text" required ng-model="cliente.Tercero.Nombre" class="form-control" id="txtNombre" name="txtNombre" placeholder="Razón Social">
+                        <span ng-show="form.txtNombre.$dirty && form.txtNombre.$error.required" class="help-block">Razón social es requerida</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Nit</label>
+                        <input type="text" required ng-model="cliente.Tercero.Identificacion" class="form-control" id="txtIdentificacion" name="txtIdentificacion" placeholder="Nit">
+                        <span ng-show="form.txtIdentificacion.$dirty && form.txtIdentificacion.$error.required" class="help-block">Nit es requerido</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" ng-model="cliente.Tercero.Direccion" class="form-control" id="formRegCli" placeholder="Dirección">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" ng-model="cliente.Tercero.Telefono" class="form-control" id="formRegCli" placeholder="Teléfono">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Celular</label>
+                        <input type="text" class="form-control" ng-model="cliente.Tercero.Celular" id="txtCelular" name="txtCelular" placeholder="Celular">
+                    </div>
+
+                    <div ng-show="!IsEditing">
+                        <h3>Login</h3>
+                        <div class="form-group">
+                            <label>Login</label>
+                            <input type="text" ng-required="!IsEditing" class="form-control" ng-model="security.Login" id="txtLogin" name="txtLogin" placeholder="Login">
+                            <span ng-show="form.txtLogin.$dirty && form.txtLogin.$error.required" class="help-block">Login es requerido</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nueva Clave</label>
+                            <input type="password" ng-required="!IsEditing" data-ng-model="security.newClave" class="form-control" id="txtClaveNew" name="txtClaveNew" placeholder="Nueva clave">
+                            <span ng-show="form.txtClaveNew.$dirty && form.txtClaveNew.$error.required" class="help-block">Clave es requerida</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirmar Clave</label>
+                            <input type="password" ng-required="!IsEditing" data-ng-model="security.newClaveConfirm" class="form-control" id="txtClaveConfirm" name="txtClaveConfirm" placeholder="Confirmar clave">
+                            <span ng-show="form.txtClaveConfirm.$dirty && form.txtClaveConfirm.$error.required" class="help-block">requerido</span>
+                            <span ng-show="form.txtClaveConfirm.$dirty && security.newClave != security.newClaveConfirm" class="help-block">La clave no coincide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spbut"></div>
+        <div id="buttons" style="margin-top: 8%; ">
+            <button type="submit" ng-disabled="form.$invalid || (security.newClave != security.newClaveConfirm && !IsEditing)" class="btn btn-info">Guardar</button>
+            <button class="btn btn-danger" ng-show="canDelete" ng-click="deleteCliente()">Eliminar</button>
+            <button class="btn btn-success" ng-show="canCancel" ng-click="goPath('/clientes')">Cancelar</button>
+            <span>{{}}</span>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+

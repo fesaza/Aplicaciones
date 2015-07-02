@@ -1,0 +1,10 @@
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\Se.MoneyPoints.Model.dll.config
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\Se.MoneyPoints.Model.dll
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\Se.MoneyPoints.Model.pdb
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\EntityFramework.dll
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\EntityFramework.xml
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\obj\Debug\Se.MoneyPoints.Model.dll
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\obj\Debug\Se.MoneyPoints.Model.pdb
+C:\Users\felipe.salgado\Documents\Visual Studio 2015\Projects\Se.MoneyPoints\Se.MoneyPoints.Model\obj\Debug\Se.MoneyPoints.Model.csprojResolveAssemblyReference.cache

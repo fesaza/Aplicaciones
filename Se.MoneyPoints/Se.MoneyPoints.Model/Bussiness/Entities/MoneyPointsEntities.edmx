@@ -1,0 +1,1161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MoneyPoints_dlloModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Afiliados">
+          <Key>
+            <PropertyRef Name="AfiliadoId" />
+          </Key>
+          <Property Name="AfiliadoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClienteId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AfiliadosClientes">
+          <Key>
+            <PropertyRef Name="AfiliadosClienteId" />
+          </Key>
+          <Property Name="AfiliadosClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClienteId" Type="int" Nullable="false" />
+          <Property Name="AfiliadoId" Type="int" Nullable="false" />
+          <Property Name="FechaBaja" Type="datetime" />
+          <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Asegurables">
+          <Key>
+            <PropertyRef Name="AsegurableId" />
+          </Key>
+          <Property Name="AsegurableId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ruta" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="AsegurablesRoles">
+          <Key>
+            <PropertyRef Name="AsegurablesRolId" />
+          </Key>
+          <Property Name="AsegurablesRolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RolId" Type="int" Nullable="false" />
+          <Property Name="AsegurableId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Beneficiarios">
+          <Key>
+            <PropertyRef Name="BeneficiarioId" />
+          </Key>
+          <Property Name="BeneficiarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TerceroId" Type="int" Nullable="false" />
+          <Property Name="Pin" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="BeneficiariosClientes">
+          <Key>
+            <PropertyRef Name="BeneficiariosClienteId" />
+          </Key>
+          <Property Name="BeneficiariosClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClienteId" Type="int" Nullable="false" />
+          <Property Name="BeneficiarioId" Type="int" Nullable="false" />
+          <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+          <Property Name="FechaBaja" Type="datetime" />
+          <Property Name="Saldo" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="Puntos" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BeneficiariosClientesCompras">
+          <Key>
+            <PropertyRef Name="BeneficiariosClientesCompraId" />
+          </Key>
+          <Property Name="BeneficiariosClientesCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BeneficiariosClienteId" Type="int" Nullable="false" />
+          <Property Name="CompraId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BeneficiariosPuntos">
+          <Key>
+            <PropertyRef Name="BeneficiariosPuntoId" />
+          </Key>
+          <Property Name="BeneficiariosPuntoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BeneficiariosClienteId" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Puntos" Type="int" Nullable="false" />
+          <Property Name="Valor" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ClienteId" />
+          </Key>
+          <Property Name="ClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TerceroId" Type="int" Nullable="false" />
+          <Property Name="ProgramaPrivado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Compras">
+          <Key>
+            <PropertyRef Name="CompraId" />
+          </Key>
+          <Property Name="CompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AfiliadoId" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Valor" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="NumeroFactura" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Conciliaciones">
+          <Key>
+            <PropertyRef Name="ConciliacionId" />
+          </Key>
+          <Property Name="ConciliacionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AfiliadosClienteId" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Valor" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Observacion" Type="varchar" MaxLength="500" />
+          <Property Name="NroComprobante" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DetallesCompras">
+          <Key>
+            <PropertyRef Name="DetallesCompraId" />
+          </Key>
+          <Property Name="DetallesCompraId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompraId" Type="int" Nullable="false" />
+          <Property Name="Valor" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Equivalencias">
+          <Key>
+            <PropertyRef Name="EquivalenciaId" />
+          </Key>
+          <Property Name="EquivalenciaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Puntos" Type="int" Nullable="false" />
+          <Property Name="Valor" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="FechaBaja" Type="datetime" />
+          <Property Name="ClienteId" Type="int" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="RolId" />
+          </Key>
+          <Property Name="RolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Terceros">
+          <Key>
+            <PropertyRef Name="TerceroId" />
+          </Key>
+          <Property Name="TerceroId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Identificacion" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="varchar" MaxLength="50" />
+          <Property Name="Celular" Type="varchar" MaxLength="50" />
+          <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+          <Property Name="FechaBaja" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="UsuarioId" />
+          </Key>
+          <Property Name="UsuarioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="RolId" Type="int" Nullable="false" />
+          <Property Name="TerceroId" Type="int" />
+        </EntityType>
+        <Association Name="FK_Afiliados_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="Afiliados" Type="Self.Afiliados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Afiliados">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AfiliadosClientes_Afiliados">
+          <End Role="Afiliados" Type="Self.Afiliados" Multiplicity="1" />
+          <End Role="AfiliadosClientes" Type="Self.AfiliadosClientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Afiliados">
+              <PropertyRef Name="AfiliadoId" />
+            </Principal>
+            <Dependent Role="AfiliadosClientes">
+              <PropertyRef Name="AfiliadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AfiliadosClientes_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="AfiliadosClientes" Type="Self.AfiliadosClientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="AfiliadosClientes">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AsegurablesRoles_Asegurables">
+          <End Role="Asegurables" Type="Self.Asegurables" Multiplicity="1" />
+          <End Role="AsegurablesRoles" Type="Self.AsegurablesRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Asegurables">
+              <PropertyRef Name="AsegurableId" />
+            </Principal>
+            <Dependent Role="AsegurablesRoles">
+              <PropertyRef Name="AsegurableId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AsegurablesRoles_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="AsegurablesRoles" Type="Self.AsegurablesRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RolId" />
+            </Principal>
+            <Dependent Role="AsegurablesRoles">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Beneficiarios_Terceros">
+          <End Role="Terceros" Type="Self.Terceros" Multiplicity="1" />
+          <End Role="Beneficiarios" Type="Self.Beneficiarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Terceros">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Beneficiarios">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientes_Beneficiarios">
+          <End Role="Beneficiarios" Type="Self.Beneficiarios" Multiplicity="1" />
+          <End Role="BeneficiariosClientes" Type="Self.BeneficiariosClientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beneficiarios">
+              <PropertyRef Name="BeneficiarioId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientes">
+              <PropertyRef Name="BeneficiarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientes_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="BeneficiariosClientes" Type="Self.BeneficiariosClientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientes">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientesCompras_BeneficiariosClientes">
+          <End Role="BeneficiariosClientes" Type="Self.BeneficiariosClientes" Multiplicity="1" />
+          <End Role="BeneficiariosClientesCompras" Type="Self.BeneficiariosClientesCompras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BeneficiariosClientes">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientesCompras">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientesCompras_Compras">
+          <End Role="Compras" Type="Self.Compras" Multiplicity="1" />
+          <End Role="BeneficiariosClientesCompras" Type="Self.BeneficiariosClientesCompras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Compras">
+              <PropertyRef Name="CompraId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientesCompras">
+              <PropertyRef Name="CompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosPuntos_BeneficiariosClientes">
+          <End Role="BeneficiariosClientes" Type="Self.BeneficiariosClientes" Multiplicity="1" />
+          <End Role="BeneficiariosPuntos" Type="Self.BeneficiariosPuntos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BeneficiariosClientes">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosPuntos">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Clientes_Terceros">
+          <End Role="Terceros" Type="Self.Terceros" Multiplicity="1" />
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Terceros">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Clientes">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Compras_Afiliados">
+          <End Role="Afiliados" Type="Self.Afiliados" Multiplicity="1" />
+          <End Role="Compras" Type="Self.Compras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Afiliados">
+              <PropertyRef Name="AfiliadoId" />
+            </Principal>
+            <Dependent Role="Compras">
+              <PropertyRef Name="AfiliadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conciliaciones_AfiliadosClientes">
+          <End Role="AfiliadosClientes" Type="Self.AfiliadosClientes" Multiplicity="1" />
+          <End Role="Conciliaciones" Type="Self.Conciliaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AfiliadosClientes">
+              <PropertyRef Name="AfiliadosClienteId" />
+            </Principal>
+            <Dependent Role="Conciliaciones">
+              <PropertyRef Name="AfiliadosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesCompras_Compras">
+          <End Role="Compras" Type="Self.Compras" Multiplicity="1" />
+          <End Role="DetallesCompras" Type="Self.DetallesCompras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Compras">
+              <PropertyRef Name="CompraId" />
+            </Principal>
+            <Dependent Role="DetallesCompras">
+              <PropertyRef Name="CompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Equivalencias_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Equivalencias" Type="Self.Equivalencias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Equivalencias">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RolId" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Terceros">
+          <End Role="Terceros" Type="Self.Terceros" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Terceros">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MoneyPoints_dlloModelStoreContainer">
+          <EntitySet Name="Afiliados" EntityType="Self.Afiliados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AfiliadosClientes" EntityType="Self.AfiliadosClientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asegurables" EntityType="Self.Asegurables" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AsegurablesRoles" EntityType="Self.AsegurablesRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Beneficiarios" EntityType="Self.Beneficiarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BeneficiariosClientes" EntityType="Self.BeneficiariosClientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BeneficiariosClientesCompras" EntityType="Self.BeneficiariosClientesCompras" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BeneficiariosPuntos" EntityType="Self.BeneficiariosPuntos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Compras" EntityType="Self.Compras" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Conciliaciones" EntityType="Self.Conciliaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetallesCompras" EntityType="Self.DetallesCompras" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Equivalencias" EntityType="Self.Equivalencias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Terceros" EntityType="Self.Terceros" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Afiliados_Clientes" Association="Self.FK_Afiliados_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Afiliados" EntitySet="Afiliados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AfiliadosClientes_Afiliados" Association="Self.FK_AfiliadosClientes_Afiliados">
+            <End Role="Afiliados" EntitySet="Afiliados" />
+            <End Role="AfiliadosClientes" EntitySet="AfiliadosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AfiliadosClientes_Clientes" Association="Self.FK_AfiliadosClientes_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="AfiliadosClientes" EntitySet="AfiliadosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AsegurablesRoles_Asegurables" Association="Self.FK_AsegurablesRoles_Asegurables">
+            <End Role="Asegurables" EntitySet="Asegurables" />
+            <End Role="AsegurablesRoles" EntitySet="AsegurablesRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AsegurablesRoles_Roles" Association="Self.FK_AsegurablesRoles_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="AsegurablesRoles" EntitySet="AsegurablesRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Beneficiarios_Terceros" Association="Self.FK_Beneficiarios_Terceros">
+            <End Role="Terceros" EntitySet="Terceros" />
+            <End Role="Beneficiarios" EntitySet="Beneficiarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientes_Beneficiarios" Association="Self.FK_BeneficiariosClientes_Beneficiarios">
+            <End Role="Beneficiarios" EntitySet="Beneficiarios" />
+            <End Role="BeneficiariosClientes" EntitySet="BeneficiariosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientes_Clientes" Association="Self.FK_BeneficiariosClientes_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="BeneficiariosClientes" EntitySet="BeneficiariosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientesCompras_BeneficiariosClientes" Association="Self.FK_BeneficiariosClientesCompras_BeneficiariosClientes">
+            <End Role="BeneficiariosClientes" EntitySet="BeneficiariosClientes" />
+            <End Role="BeneficiariosClientesCompras" EntitySet="BeneficiariosClientesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientesCompras_Compras" Association="Self.FK_BeneficiariosClientesCompras_Compras">
+            <End Role="Compras" EntitySet="Compras" />
+            <End Role="BeneficiariosClientesCompras" EntitySet="BeneficiariosClientesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosPuntos_BeneficiariosClientes" Association="Self.FK_BeneficiariosPuntos_BeneficiariosClientes">
+            <End Role="BeneficiariosClientes" EntitySet="BeneficiariosClientes" />
+            <End Role="BeneficiariosPuntos" EntitySet="BeneficiariosPuntos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Clientes_Terceros" Association="Self.FK_Clientes_Terceros">
+            <End Role="Terceros" EntitySet="Terceros" />
+            <End Role="Clientes" EntitySet="Clientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Compras_Afiliados" Association="Self.FK_Compras_Afiliados">
+            <End Role="Afiliados" EntitySet="Afiliados" />
+            <End Role="Compras" EntitySet="Compras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conciliaciones_AfiliadosClientes" Association="Self.FK_Conciliaciones_AfiliadosClientes">
+            <End Role="AfiliadosClientes" EntitySet="AfiliadosClientes" />
+            <End Role="Conciliaciones" EntitySet="Conciliaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetallesCompras_Compras" Association="Self.FK_DetallesCompras_Compras">
+            <End Role="Compras" EntitySet="Compras" />
+            <End Role="DetallesCompras" EntitySet="DetallesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Equivalencias_Clientes" Association="Self.FK_Equivalencias_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Equivalencias" EntitySet="Equivalencias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Roles" Association="Self.FK_Usuarios_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Terceros" Association="Self.FK_Usuarios_Terceros">
+            <End Role="Terceros" EntitySet="Terceros" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MoneyPoints_dlloModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MoneyPoints_dlloEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Afiliados" EntityType="MoneyPoints_dlloModel.Afiliado" />
+          <EntitySet Name="AfiliadosClientes" EntityType="MoneyPoints_dlloModel.AfiliadosCliente" />
+          <EntitySet Name="Asegurables" EntityType="MoneyPoints_dlloModel.Asegurable" />
+          <EntitySet Name="AsegurablesRoles" EntityType="MoneyPoints_dlloModel.AsegurablesRole" />
+          <EntitySet Name="Beneficiarios" EntityType="MoneyPoints_dlloModel.Beneficiario" />
+          <EntitySet Name="BeneficiariosClientes" EntityType="MoneyPoints_dlloModel.BeneficiariosCliente" />
+          <EntitySet Name="BeneficiariosClientesCompras" EntityType="MoneyPoints_dlloModel.BeneficiariosClientesCompra" />
+          <EntitySet Name="BeneficiariosPuntos" EntityType="MoneyPoints_dlloModel.BeneficiariosPunto" />
+          <EntitySet Name="Clientes" EntityType="MoneyPoints_dlloModel.Cliente" />
+          <EntitySet Name="Compras" EntityType="MoneyPoints_dlloModel.Compra" />
+          <EntitySet Name="Conciliaciones" EntityType="MoneyPoints_dlloModel.Conciliacione" />
+          <EntitySet Name="DetallesCompras" EntityType="MoneyPoints_dlloModel.DetallesCompra" />
+          <EntitySet Name="Equivalencias" EntityType="MoneyPoints_dlloModel.Equivalencia" />
+          <EntitySet Name="Roles" EntityType="MoneyPoints_dlloModel.Role" />
+          <EntitySet Name="Terceros" EntityType="MoneyPoints_dlloModel.Tercero" />
+          <EntitySet Name="Usuarios" EntityType="MoneyPoints_dlloModel.Usuario" />
+          <AssociationSet Name="FK_Afiliados_Clientes" Association="MoneyPoints_dlloModel.FK_Afiliados_Clientes">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="Afiliado" EntitySet="Afiliados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AfiliadosClientes_Afiliados" Association="MoneyPoints_dlloModel.FK_AfiliadosClientes_Afiliados">
+            <End Role="Afiliado" EntitySet="Afiliados" />
+            <End Role="AfiliadosCliente" EntitySet="AfiliadosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Compras_Afiliados" Association="MoneyPoints_dlloModel.FK_Compras_Afiliados">
+            <End Role="Afiliado" EntitySet="Afiliados" />
+            <End Role="Compra" EntitySet="Compras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AfiliadosClientes_Clientes" Association="MoneyPoints_dlloModel.FK_AfiliadosClientes_Clientes">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="AfiliadosCliente" EntitySet="AfiliadosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conciliaciones_AfiliadosClientes" Association="MoneyPoints_dlloModel.FK_Conciliaciones_AfiliadosClientes">
+            <End Role="AfiliadosCliente" EntitySet="AfiliadosClientes" />
+            <End Role="Conciliacione" EntitySet="Conciliaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AsegurablesRoles_Asegurables" Association="MoneyPoints_dlloModel.FK_AsegurablesRoles_Asegurables">
+            <End Role="Asegurable" EntitySet="Asegurables" />
+            <End Role="AsegurablesRole" EntitySet="AsegurablesRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AsegurablesRoles_Roles" Association="MoneyPoints_dlloModel.FK_AsegurablesRoles_Roles">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="AsegurablesRole" EntitySet="AsegurablesRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Beneficiarios_Terceros" Association="MoneyPoints_dlloModel.FK_Beneficiarios_Terceros">
+            <End Role="Tercero" EntitySet="Terceros" />
+            <End Role="Beneficiario" EntitySet="Beneficiarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientes_Beneficiarios" Association="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Beneficiarios">
+            <End Role="Beneficiario" EntitySet="Beneficiarios" />
+            <End Role="BeneficiariosCliente" EntitySet="BeneficiariosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientes_Clientes" Association="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Clientes">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="BeneficiariosCliente" EntitySet="BeneficiariosClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientesCompras_BeneficiariosClientes" Association="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_BeneficiariosClientes">
+            <End Role="BeneficiariosCliente" EntitySet="BeneficiariosClientes" />
+            <End Role="BeneficiariosClientesCompra" EntitySet="BeneficiariosClientesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosPuntos_BeneficiariosClientes" Association="MoneyPoints_dlloModel.FK_BeneficiariosPuntos_BeneficiariosClientes">
+            <End Role="BeneficiariosCliente" EntitySet="BeneficiariosClientes" />
+            <End Role="BeneficiariosPunto" EntitySet="BeneficiariosPuntos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BeneficiariosClientesCompras_Compras" Association="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_Compras">
+            <End Role="Compra" EntitySet="Compras" />
+            <End Role="BeneficiariosClientesCompra" EntitySet="BeneficiariosClientesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Clientes_Terceros" Association="MoneyPoints_dlloModel.FK_Clientes_Terceros">
+            <End Role="Tercero" EntitySet="Terceros" />
+            <End Role="Cliente" EntitySet="Clientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Equivalencias_Clientes" Association="MoneyPoints_dlloModel.FK_Equivalencias_Clientes">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="Equivalencia" EntitySet="Equivalencias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetallesCompras_Compras" Association="MoneyPoints_dlloModel.FK_DetallesCompras_Compras">
+            <End Role="Compra" EntitySet="Compras" />
+            <End Role="DetallesCompra" EntitySet="DetallesCompras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Roles" Association="MoneyPoints_dlloModel.FK_Usuarios_Roles">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Terceros" Association="MoneyPoints_dlloModel.FK_Usuarios_Terceros">
+            <End Role="Tercero" EntitySet="Terceros" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Afiliado">
+          <Key>
+            <PropertyRef Name="AfiliadoId" />
+          </Key>
+          <Property Name="AfiliadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Cliente" Relationship="MoneyPoints_dlloModel.FK_Afiliados_Clientes" FromRole="Afiliado" ToRole="Cliente" />
+          <NavigationProperty Name="AfiliadosClientes" Relationship="MoneyPoints_dlloModel.FK_AfiliadosClientes_Afiliados" FromRole="Afiliado" ToRole="AfiliadosCliente" />
+          <NavigationProperty Name="Compras" Relationship="MoneyPoints_dlloModel.FK_Compras_Afiliados" FromRole="Afiliado" ToRole="Compra" />
+        </EntityType>
+        <EntityType Name="AfiliadosCliente">
+          <Key>
+            <PropertyRef Name="AfiliadosClienteId" />
+          </Key>
+          <Property Name="AfiliadosClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <Property Name="AfiliadoId" Type="Int32" Nullable="false" />
+          <Property Name="FechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Afiliado" Relationship="MoneyPoints_dlloModel.FK_AfiliadosClientes_Afiliados" FromRole="AfiliadosCliente" ToRole="Afiliado" />
+          <NavigationProperty Name="Cliente" Relationship="MoneyPoints_dlloModel.FK_AfiliadosClientes_Clientes" FromRole="AfiliadosCliente" ToRole="Cliente" />
+          <NavigationProperty Name="Conciliaciones" Relationship="MoneyPoints_dlloModel.FK_Conciliaciones_AfiliadosClientes" FromRole="AfiliadosCliente" ToRole="Conciliacione" />
+        </EntityType>
+        <EntityType Name="Asegurable">
+          <Key>
+            <PropertyRef Name="AsegurableId" />
+          </Key>
+          <Property Name="AsegurableId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ruta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AsegurablesRoles" Relationship="MoneyPoints_dlloModel.FK_AsegurablesRoles_Asegurables" FromRole="Asegurable" ToRole="AsegurablesRole" />
+        </EntityType>
+        <EntityType Name="AsegurablesRole">
+          <Key>
+            <PropertyRef Name="AsegurablesRolId" />
+          </Key>
+          <Property Name="AsegurablesRolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RolId" Type="Int32" Nullable="false" />
+          <Property Name="AsegurableId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Asegurable" Relationship="MoneyPoints_dlloModel.FK_AsegurablesRoles_Asegurables" FromRole="AsegurablesRole" ToRole="Asegurable" />
+          <NavigationProperty Name="Role" Relationship="MoneyPoints_dlloModel.FK_AsegurablesRoles_Roles" FromRole="AsegurablesRole" ToRole="Role" />
+        </EntityType>
+        <EntityType Name="Beneficiario">
+          <Key>
+            <PropertyRef Name="BeneficiarioId" />
+          </Key>
+          <Property Name="BeneficiarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TerceroId" Type="Int32" Nullable="false" />
+          <Property Name="Pin" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tercero" Relationship="MoneyPoints_dlloModel.FK_Beneficiarios_Terceros" FromRole="Beneficiario" ToRole="Tercero" />
+          <NavigationProperty Name="BeneficiariosClientes" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Beneficiarios" FromRole="Beneficiario" ToRole="BeneficiariosCliente" />
+        </EntityType>
+        <EntityType Name="BeneficiariosCliente">
+          <Key>
+            <PropertyRef Name="BeneficiariosClienteId" />
+          </Key>
+          <Property Name="BeneficiariosClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <Property Name="BeneficiarioId" Type="Int32" Nullable="false" />
+          <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="Saldo" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Puntos" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Beneficiario" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Beneficiarios" FromRole="BeneficiariosCliente" ToRole="Beneficiario" />
+          <NavigationProperty Name="Cliente" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Clientes" FromRole="BeneficiariosCliente" ToRole="Cliente" />
+          <NavigationProperty Name="BeneficiariosClientesCompras" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_BeneficiariosClientes" FromRole="BeneficiariosCliente" ToRole="BeneficiariosClientesCompra" />
+          <NavigationProperty Name="BeneficiariosPuntos" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosPuntos_BeneficiariosClientes" FromRole="BeneficiariosCliente" ToRole="BeneficiariosPunto" />
+        </EntityType>
+        <EntityType Name="BeneficiariosClientesCompra">
+          <Key>
+            <PropertyRef Name="BeneficiariosClientesCompraId" />
+          </Key>
+          <Property Name="BeneficiariosClientesCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BeneficiariosClienteId" Type="Int32" Nullable="false" />
+          <Property Name="CompraId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BeneficiariosCliente" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_BeneficiariosClientes" FromRole="BeneficiariosClientesCompra" ToRole="BeneficiariosCliente" />
+          <NavigationProperty Name="Compra" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_Compras" FromRole="BeneficiariosClientesCompra" ToRole="Compra" />
+        </EntityType>
+        <EntityType Name="BeneficiariosPunto">
+          <Key>
+            <PropertyRef Name="BeneficiariosPuntoId" />
+          </Key>
+          <Property Name="BeneficiariosPuntoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BeneficiariosClienteId" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Puntos" Type="Int32" Nullable="false" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <NavigationProperty Name="BeneficiariosCliente" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosPuntos_BeneficiariosClientes" FromRole="BeneficiariosPunto" ToRole="BeneficiariosCliente" />
+        </EntityType>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="ClienteId" />
+          </Key>
+          <Property Name="ClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TerceroId" Type="Int32" Nullable="false" />
+          <Property Name="ProgramaPrivado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Afiliados" Relationship="MoneyPoints_dlloModel.FK_Afiliados_Clientes" FromRole="Cliente" ToRole="Afiliado" />
+          <NavigationProperty Name="AfiliadosClientes" Relationship="MoneyPoints_dlloModel.FK_AfiliadosClientes_Clientes" FromRole="Cliente" ToRole="AfiliadosCliente" />
+          <NavigationProperty Name="BeneficiariosClientes" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Clientes" FromRole="Cliente" ToRole="BeneficiariosCliente" />
+          <NavigationProperty Name="Tercero" Relationship="MoneyPoints_dlloModel.FK_Clientes_Terceros" FromRole="Cliente" ToRole="Tercero" />
+          <NavigationProperty Name="Equivalencias" Relationship="MoneyPoints_dlloModel.FK_Equivalencias_Clientes" FromRole="Cliente" ToRole="Equivalencia" />
+        </EntityType>
+        <EntityType Name="Compra">
+          <Key>
+            <PropertyRef Name="CompraId" />
+          </Key>
+          <Property Name="CompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AfiliadoId" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="NumeroFactura" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Afiliado" Relationship="MoneyPoints_dlloModel.FK_Compras_Afiliados" FromRole="Compra" ToRole="Afiliado" />
+          <NavigationProperty Name="BeneficiariosClientesCompras" Relationship="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_Compras" FromRole="Compra" ToRole="BeneficiariosClientesCompra" />
+          <NavigationProperty Name="DetallesCompras" Relationship="MoneyPoints_dlloModel.FK_DetallesCompras_Compras" FromRole="Compra" ToRole="DetallesCompra" />
+        </EntityType>
+        <EntityType Name="Conciliacione">
+          <Key>
+            <PropertyRef Name="ConciliacionId" />
+          </Key>
+          <Property Name="ConciliacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AfiliadosClienteId" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Estado" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Observacion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="NroComprobante" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AfiliadosCliente" Relationship="MoneyPoints_dlloModel.FK_Conciliaciones_AfiliadosClientes" FromRole="Conciliacione" ToRole="AfiliadosCliente" />
+        </EntityType>
+        <EntityType Name="DetallesCompra">
+          <Key>
+            <PropertyRef Name="DetallesCompraId" />
+          </Key>
+          <Property Name="DetallesCompraId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompraId" Type="Int32" Nullable="false" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <NavigationProperty Name="Compra" Relationship="MoneyPoints_dlloModel.FK_DetallesCompras_Compras" FromRole="DetallesCompra" ToRole="Compra" />
+        </EntityType>
+        <EntityType Name="Equivalencia">
+          <Key>
+            <PropertyRef Name="EquivalenciaId" />
+          </Key>
+          <Property Name="EquivalenciaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Puntos" Type="Int32" Nullable="false" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="FechaBaja" Type="DateTime" Precision="3" />
+          <Property Name="ClienteId" Type="Int32" />
+          <NavigationProperty Name="Cliente" Relationship="MoneyPoints_dlloModel.FK_Equivalencias_Clientes" FromRole="Equivalencia" ToRole="Cliente" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RolId" />
+          </Key>
+          <Property Name="RolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AsegurablesRoles" Relationship="MoneyPoints_dlloModel.FK_AsegurablesRoles_Roles" FromRole="Role" ToRole="AsegurablesRole" />
+          <NavigationProperty Name="Usuarios" Relationship="MoneyPoints_dlloModel.FK_Usuarios_Roles" FromRole="Role" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Tercero">
+          <Key>
+            <PropertyRef Name="TerceroId" />
+          </Key>
+          <Property Name="TerceroId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Identificacion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaBaja" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Beneficiarios" Relationship="MoneyPoints_dlloModel.FK_Beneficiarios_Terceros" FromRole="Tercero" ToRole="Beneficiario" />
+          <NavigationProperty Name="Clientes" Relationship="MoneyPoints_dlloModel.FK_Clientes_Terceros" FromRole="Tercero" ToRole="Cliente" />
+          <NavigationProperty Name="Usuarios" Relationship="MoneyPoints_dlloModel.FK_Usuarios_Terceros" FromRole="Tercero" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="UsuarioId" />
+          </Key>
+          <Property Name="UsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="RolId" Type="Int32" Nullable="false" />
+          <Property Name="TerceroId" Type="Int32" />
+          <NavigationProperty Name="Role" Relationship="MoneyPoints_dlloModel.FK_Usuarios_Roles" FromRole="Usuario" ToRole="Role" />
+          <NavigationProperty Name="Tercero" Relationship="MoneyPoints_dlloModel.FK_Usuarios_Terceros" FromRole="Usuario" ToRole="Tercero" />
+        </EntityType>
+        <Association Name="FK_Afiliados_Clientes">
+          <End Type="MoneyPoints_dlloModel.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Afiliado" Role="Afiliado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Afiliado">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AfiliadosClientes_Afiliados">
+          <End Type="MoneyPoints_dlloModel.Afiliado" Role="Afiliado" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.AfiliadosCliente" Role="AfiliadosCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Afiliado">
+              <PropertyRef Name="AfiliadoId" />
+            </Principal>
+            <Dependent Role="AfiliadosCliente">
+              <PropertyRef Name="AfiliadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Compras_Afiliados">
+          <End Type="MoneyPoints_dlloModel.Afiliado" Role="Afiliado" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Compra" Role="Compra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Afiliado">
+              <PropertyRef Name="AfiliadoId" />
+            </Principal>
+            <Dependent Role="Compra">
+              <PropertyRef Name="AfiliadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AfiliadosClientes_Clientes">
+          <End Type="MoneyPoints_dlloModel.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.AfiliadosCliente" Role="AfiliadosCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="AfiliadosCliente">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conciliaciones_AfiliadosClientes">
+          <End Type="MoneyPoints_dlloModel.AfiliadosCliente" Role="AfiliadosCliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Conciliacione" Role="Conciliacione" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AfiliadosCliente">
+              <PropertyRef Name="AfiliadosClienteId" />
+            </Principal>
+            <Dependent Role="Conciliacione">
+              <PropertyRef Name="AfiliadosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AsegurablesRoles_Asegurables">
+          <End Type="MoneyPoints_dlloModel.Asegurable" Role="Asegurable" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.AsegurablesRole" Role="AsegurablesRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Asegurable">
+              <PropertyRef Name="AsegurableId" />
+            </Principal>
+            <Dependent Role="AsegurablesRole">
+              <PropertyRef Name="AsegurableId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AsegurablesRoles_Roles">
+          <End Type="MoneyPoints_dlloModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.AsegurablesRole" Role="AsegurablesRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="RolId" />
+            </Principal>
+            <Dependent Role="AsegurablesRole">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Beneficiarios_Terceros">
+          <End Type="MoneyPoints_dlloModel.Tercero" Role="Tercero" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Beneficiario" Role="Beneficiario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tercero">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Beneficiario">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientes_Beneficiarios">
+          <End Type="MoneyPoints_dlloModel.Beneficiario" Role="Beneficiario" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.BeneficiariosCliente" Role="BeneficiariosCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beneficiario">
+              <PropertyRef Name="BeneficiarioId" />
+            </Principal>
+            <Dependent Role="BeneficiariosCliente">
+              <PropertyRef Name="BeneficiarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientes_Clientes">
+          <End Type="MoneyPoints_dlloModel.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.BeneficiariosCliente" Role="BeneficiariosCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosCliente">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientesCompras_BeneficiariosClientes">
+          <End Type="MoneyPoints_dlloModel.BeneficiariosCliente" Role="BeneficiariosCliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.BeneficiariosClientesCompra" Role="BeneficiariosClientesCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BeneficiariosCliente">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientesCompra">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosPuntos_BeneficiariosClientes">
+          <End Type="MoneyPoints_dlloModel.BeneficiariosCliente" Role="BeneficiariosCliente" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.BeneficiariosPunto" Role="BeneficiariosPunto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BeneficiariosCliente">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Principal>
+            <Dependent Role="BeneficiariosPunto">
+              <PropertyRef Name="BeneficiariosClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BeneficiariosClientesCompras_Compras">
+          <End Type="MoneyPoints_dlloModel.Compra" Role="Compra" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.BeneficiariosClientesCompra" Role="BeneficiariosClientesCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Compra">
+              <PropertyRef Name="CompraId" />
+            </Principal>
+            <Dependent Role="BeneficiariosClientesCompra">
+              <PropertyRef Name="CompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Clientes_Terceros">
+          <End Type="MoneyPoints_dlloModel.Tercero" Role="Tercero" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Cliente" Role="Cliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tercero">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Cliente">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Equivalencias_Clientes">
+          <End Type="MoneyPoints_dlloModel.Cliente" Role="Cliente" Multiplicity="0..1" />
+          <End Type="MoneyPoints_dlloModel.Equivalencia" Role="Equivalencia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Equivalencia">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetallesCompras_Compras">
+          <End Type="MoneyPoints_dlloModel.Compra" Role="Compra" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.DetallesCompra" Role="DetallesCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Compra">
+              <PropertyRef Name="CompraId" />
+            </Principal>
+            <Dependent Role="DetallesCompra">
+              <PropertyRef Name="CompraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Roles">
+          <End Type="MoneyPoints_dlloModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="MoneyPoints_dlloModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="RolId" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Terceros">
+          <End Type="MoneyPoints_dlloModel.Tercero" Role="Tercero" Multiplicity="0..1" />
+          <End Type="MoneyPoints_dlloModel.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tercero">
+              <PropertyRef Name="TerceroId" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="TerceroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MoneyPoints_dlloModelStoreContainer" CdmEntityContainer="MoneyPoints_dlloEntities">
+          <EntitySetMapping Name="Afiliados">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Afiliado">
+              <MappingFragment StoreEntitySet="Afiliados">
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AfiliadosClientes">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.AfiliadosCliente">
+              <MappingFragment StoreEntitySet="AfiliadosClientes">
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="AfiliadosClienteId" ColumnName="AfiliadosClienteId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asegurables">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Asegurable">
+              <MappingFragment StoreEntitySet="Asegurables">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="AsegurableId" ColumnName="AsegurableId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AsegurablesRoles">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.AsegurablesRole">
+              <MappingFragment StoreEntitySet="AsegurablesRoles">
+                <ScalarProperty Name="AsegurableId" ColumnName="AsegurableId" />
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+                <ScalarProperty Name="AsegurablesRolId" ColumnName="AsegurablesRolId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Beneficiarios">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Beneficiario">
+              <MappingFragment StoreEntitySet="Beneficiarios">
+                <ScalarProperty Name="Pin" ColumnName="Pin" />
+                <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+                <ScalarProperty Name="BeneficiarioId" ColumnName="BeneficiarioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BeneficiariosClientes">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosCliente">
+              <MappingFragment StoreEntitySet="BeneficiariosClientes">
+                <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+                <ScalarProperty Name="Saldo" ColumnName="Saldo" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="BeneficiarioId" ColumnName="BeneficiarioId" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BeneficiariosClientesCompras">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosClientesCompra">
+              <MappingFragment StoreEntitySet="BeneficiariosClientesCompras">
+                <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+                <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+                <ScalarProperty Name="BeneficiariosClientesCompraId" ColumnName="BeneficiariosClientesCompraId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BeneficiariosPuntos">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.BeneficiariosPunto">
+              <MappingFragment StoreEntitySet="BeneficiariosPuntos">
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="BeneficiariosClienteId" ColumnName="BeneficiariosClienteId" />
+                <ScalarProperty Name="BeneficiariosPuntoId" ColumnName="BeneficiariosPuntoId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Cliente">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="ProgramaPrivado" ColumnName="ProgramaPrivado" />
+                <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Compras">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Compra">
+              <MappingFragment StoreEntitySet="Compras">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="NumeroFactura" ColumnName="NumeroFactura" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="AfiliadoId" ColumnName="AfiliadoId" />
+                <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conciliaciones">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Conciliacione">
+              <MappingFragment StoreEntitySet="Conciliaciones">
+                <ScalarProperty Name="NroComprobante" ColumnName="NroComprobante" />
+                <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="AfiliadosClienteId" ColumnName="AfiliadosClienteId" />
+                <ScalarProperty Name="ConciliacionId" ColumnName="ConciliacionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetallesCompras">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.DetallesCompra">
+              <MappingFragment StoreEntitySet="DetallesCompras">
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="CompraId" ColumnName="CompraId" />
+                <ScalarProperty Name="DetallesCompraId" ColumnName="DetallesCompraId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equivalencias">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Equivalencia">
+              <MappingFragment StoreEntitySet="Equivalencias">
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Puntos" ColumnName="Puntos" />
+                <ScalarProperty Name="EquivalenciaId" ColumnName="EquivalenciaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Role">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Terceros">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Tercero">
+              <MappingFragment StoreEntitySet="Terceros">
+                <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+                <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="MoneyPoints_dlloModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="TerceroId" ColumnName="TerceroId" />
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

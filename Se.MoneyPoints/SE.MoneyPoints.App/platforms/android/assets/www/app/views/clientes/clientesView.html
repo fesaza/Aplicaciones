@@ -1,0 +1,42 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\ventas.png" />
+</div>
+
+<div>
+    <p class="center"> Listar Clientes</p>
+</div>
+
+
+<div class="col-sm-12">
+    <button ng-click="goPath('/clientesDetails/0')" class="btn btn-primary btn-lg btn-block">Nuevo Cliente</button>
+</div>
+
+<div id="space"></div>
+
+<div id="example">
+    <kendo-mobile-list-view options="clientesGridOptions" />
+</div>
+
+<div id="space"></div>
+
+
+<script id="tmpClientes" type="text/x-kendo-tmpl">
+    <a href="\#/clientesDetails/{{dataItem.ClienteId}}">
+        <tr>
+            <td>
+                {{dataItem.Tercero.Nombre}}
+            </td>
+            <td>
+                {{dataItem.Tercero.Identificacion}}
+            </td>
+            <td>
+                {{dataItem.Tercero.Telefono}}
+            </td>
+        </tr>
+    </a>
+</script>
+
+
+
+
+

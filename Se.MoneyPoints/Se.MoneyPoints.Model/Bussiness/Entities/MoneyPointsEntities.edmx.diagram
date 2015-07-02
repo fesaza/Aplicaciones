@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9655a21381f7411281d4a5e2d3872792" Name="Diagram1" ZoomLevel="131">
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Afiliado" Width="1.5" PointX="5.25" PointY="15.5" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.AfiliadosCliente" Width="1.5" PointX="7.5" PointY="14.375" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Asegurable" Width="1.5" PointX="0.75" PointY="2.625" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.AsegurablesRole" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Beneficiario" Width="1.5" PointX="3" PointY="9.5" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.BeneficiariosCliente" Width="1.5" PointX="5.25" PointY="8.375" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.BeneficiariosClientesCompra" Width="1.5" PointX="9.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.BeneficiariosPunto" Width="1.5" PointX="7.5" PointY="8.875" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Cliente" Width="1.5" PointX="3" PointY="13.75" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Compra" Width="1.5" PointX="7.5" PointY="18.5" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Conciliacione" Width="1.5" PointX="9.75" PointY="14.375" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.DetallesCompra" Width="1.5" PointX="9.75" PointY="19" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Equivalencia" Width="1.5" PointX="5.25" PointY="12.25" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Role" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Tercero" Width="1.5" PointX="0.75" PointY="8.875" />
+        <EntityTypeShape EntityType="MoneyPoints_dlloModel.Usuario" Width="1.5" PointX="3" PointY="6.375" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Afiliados_Clientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_AfiliadosClientes_Afiliados" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Compras_Afiliados" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_AfiliadosClientes_Clientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Conciliaciones_AfiliadosClientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_AsegurablesRoles_Asegurables" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_AsegurablesRoles_Roles" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Beneficiarios_Terceros" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Beneficiarios" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_BeneficiariosClientes_Clientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_BeneficiariosClientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_BeneficiariosPuntos_BeneficiariosClientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_BeneficiariosClientesCompras_Compras" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Clientes_Terceros" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Equivalencias_Clientes" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_DetallesCompras_Compras" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Usuarios_Roles" />
+        <AssociationConnector Association="MoneyPoints_dlloModel.FK_Usuarios_Terceros" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

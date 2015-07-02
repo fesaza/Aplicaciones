@@ -1,0 +1,49 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\Conciliaciones.jpg" />
+</div>
+
+<div style="padding: 1em" class="css-form form-cliente">
+    <div class="col-md-12">
+
+        <div class="space1"></div>
+
+        <div class="form-group">
+            <label>Valor</label>
+            <input type="text" readonly class="form-control" data-ng-model="conciliacion.Valor" id="txtValor" required placeholder="Valor">
+            <span class="help-block"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Estado</label>
+            <input type="text" readonly class="form-control" data-ng-model="conciliacion.Fecha" id="txtFecha" required placeholder="Fecha">
+            <span class="help-block"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label>Fecha</label>
+            <input type="text" readonly class="form-control" data-ng-model="conciliacion.Fecha" id="formConci" placeholder="Valor">
+        </div>
+
+        <div class="form-group">
+            <label>Estado</label>
+            <input type="text" readonly class="form-control" data-ng-model="conciliacion.Estado" id="txtEstado" required placeholder="Estado">
+            <span class="help-block"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Observación</label>
+            <input type="text" readonly class="form-control" data-ng-model="conciliacion.Observacion" id="formConci" placeholder="Obsevacion">
+        </div>
+    </div>
+
+
+
+    <div class="spbut"></div>
+
+    <div id="buttons">
+        <!--<button class="btn btn-info" ng-click="guardarConciliacion()">Guardar</button>-->
+        <button class="btn btn-danger" ng-click="deleteConcilacion()">Eliminar</button>
+        <button class="btn btn-success" ng-click="goPath('/conciliaciones')">Cancelar</button>
+    </div>
+</div>

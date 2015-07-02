@@ -1,0 +1,64 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\Seguridad.jpg" />
+</div>
+
+<div class="container css-form form-cliente" >
+    <label><h2>Cambio de clave</h2></label>
+    <form name="form" ng-submit="cambiarClave()" class="css-form form-cliente" role="form">
+        <div class="form-group">
+            <label>Clave actual</label>
+            <input type="password" ng-model="security.clave" class="form-control" id="txtClave" name="txtClave" required placeholder="Clave actual">
+            <span ng-show="form.txtClave.$dirty && form.txtClave.$error.required" class="help-block">Clave es requireda</span>
+        </div>
+
+        <div class="form-group">
+            <label>Nueva Clave</label>
+            <input type="password" data-ng-model="security.newClave" class="form-control" id="txtClaveNew" name="txtClaveNew" required placeholder="Nueva clave">
+            <span ng-show="form.txtClaveNew.$dirty && form.txtClaveNew.$error.required" class="help-block">Clave es requireda</span>
+            <span ng-show="form.txtClaveNew.$dirty && security.newClave == security.clave" class="help-block">La nueva clave no puede ser igual a la anterior</span>
+        </div>
+
+        <div class="form-group">
+            <label>Confirmar Clave</label>
+            <input type="password" data-ng-model="security.newClaveConfirm" class="form-control" id="txtClaveConfirm" name="txtClaveConfirm" required placeholder="Confirmar clave">
+            <span ng-show="form.txtClaveConfirm.$dirty && form.txtClaveConfirm.$error.required" class="help-block">Requiredo</span>
+            <span ng-show="form.txtClaveConfirm.$dirty && security.newClave != security.newClaveConfirm" class="help-block">La nueva clave no coincide</span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form.$invalid || dataLoading || security.newClave != security.newClaveConfirm || security.newClave == security.clave" class="btn btn-info">Guardar</button>
+        </div>
+    </form>
+
+
+    <label><h2 ng-show="canCambiarPIN">Cambio de Pin</h2></label>
+
+    <form ng-show="canCambiarPIN" name="form2" ng-submit="cambiarPIN()" class="css-form" role="form">
+        <div class="form-group">
+            <label>PIN actual</label>
+            <input type="password" ng-maxlength="4" ng-minlength="4" ng-model="security.PIN" class="form-control" id="txtPIN" name="txtPIN" required placeholder="PIN">
+            <span ng-show="form2.txtPIN.$dirty && form2.txtPIN.$error.required" class="help-block">PIN es requiredo</span>
+            <span ng-show="form2.txtPIN.$dirty && security.PIN.length!=4" class="help-block">PIN es de 4 digitos</span>
+        </div>
+
+        <div class="form-group">
+            <label>Nuevo PIN</label>
+            <input type="password" ng-maxlength="4" ng-minlength="4" data-ng-model="security.newPIN" class="form-control" id="txtPINNew" name="txtPINNew" required placeholder="Nuevo PIN">
+            <span ng-show="form2.txtPINNew.$dirty && form2.txtPINNew.$error.required" class="help-block">PIN es requireda</span>
+            <span ng-show="form2.txtPINNew.$dirty && security.PIN == security.newPIN" class="help-block">Nuevo PIN no puede ser igual al anterior</span>
+            <span ng-show="form2.txtPINNew.$dirty && security.newPIN.length!=4" class="help-block">PIN es de 4 digitos</span>
+        </div>
+
+        <div class="form-group">
+            <label>Confirmar PIN</label>
+            <input type="password" ng-maxlength="4" ng-minlength="4" data-ng-model="security.newPINConfirm" class="form-control" id="txtPINConfirm" name="txtPINConfirm" required placeholder="Confirmar PIN">
+            <span ng-show="form2.txtPINConfirm.$dirty && form2.txtPINConfirm.$error.required" class="help-block">Requiredo</span>
+            <span ng-show="form2.txtPINConfirm.$dirty && security.newPIN != security.newPINConfirm" class="help-block">El nuevo PIN no coincide</span>
+            <span ng-show="form2.txtPINConfirm.$dirty && security.newPINConfirm.length!=4" class="help-block">PIN es de 4 digitos</span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" ng-disabled="form2.$invalid || dataLoading || security.newPIN != security.newPINConfirm || security.PIN == security.newPIN" class="btn btn-info">Guardar</button>
+        </div>
+    </form>
+</div>

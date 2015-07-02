@@ -1,0 +1,134 @@
+﻿<div class="row-fluid banner-ventas">
+    <img src="css\images\Informacion-beneficiario.png" />
+</div>
+<div>
+    <div kendo-tab-strip k-content-urls="[ null, null]" id="margin">
+        <!-- tab list -->
+        <ul>
+
+            <li ng-show="showEstados" class="k-state-active">Perfil</li>
+            <li ng-show="showEstados">Cuentas</li>
+        </ul>
+
+
+        <!--segundo tab-->
+        <div style="padding: 20px 1px">
+            <form name="form" ng-submit="guardarbeneficiario()" class="css-form" role="form">
+                <div class="col-md-12">
+
+                    <div class="space1"></div>
+
+                    <div class="form-group">
+                        <label>Cédula</label>
+                        <input type="text" ng-model="beneficiario.Tercero.Identificacion" class="form-control" id="txtIdentificacion" name="txtIdentificacion" required placeholder="Cédula" ng-pattern="onlyNumber" >
+                        <span ng-show="form.txtIdentificacion.$dirty && form.txtIdentificacion.$error.required" class="help-block">Identificación es requerida</span>
+                        <span ng-show="form.txtIdentificacion.$error.pattern" class="help-block">Verifique que la identificación sea numérica</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" ng-model="beneficiario.Tercero.Nombre" class="form-control" id="txtNombre" name="txtNombre" required placeholder="Nombre">
+                        <span ng-show="form.txtNombre.$dirty && form.txtNombre.$error.required" class="help-block">Nombre es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apellidos</label>
+                        <input type="text" ng-model="beneficiario.Tercero.Apellidos" class="form-control" id="txtApellidos" required placeholder="Apellidos">
+                        <span ng-show="form.txtApellidos.$dirty && form.txtApellidos.$error.required" class="help-block">Apellido es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" ng-model="beneficiario.Tercero.Direccion" class="form-control" id="formRegBen" placeholder="Dirección">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" ng-model="beneficiario.Tercero.Telefono" class="form-control" id="formRegBen" placeholder="Teléfono" name="txtTelefono" ng-pattern="onlyNumber">
+                        <span ng-show="form.txtTelefono.$error.pattern" class="help-block">Verifique que el teléfono sea numérico </span>
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Celular</label>
+                        <input type="text" class="form-control" ng-model="beneficiario.Tercero.Celular" id="formRegBen" placeholder="Celular" name="txtCelular" ng-pattern="onlyNumber">
+                        <span ng-show="form.txtCelular.$error.pattern" class="help-block">Verifique que el celular sea numérico </span>
+                        <span class="help-block"></span>
+                    </div>
+
+                    <div ng-show="!IsEditing">
+                        <h3>Login</h3>
+                        <div class="form-group">
+                            <label>Login</label>
+                            <input type="text" ng-required="!IsEditing" class="form-control" ng-model="security.Login" id="txtLogin" name="txtLogin" placeholder="Login">
+                            <span ng-show="form.txtLogin.$dirty && form.txtLogin.$error.required" class="help-block">Login es requerido</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nueva Clave</label>
+                            <input type="password" ng-required="!IsEditing" data-ng-model="security.newClave" class="form-control" id="txtClaveNew" name="txtClaveNew" placeholder="Nueva clave">
+                            <span ng-show="form.txtClaveNew.$dirty && form.txtClaveNew.$error.required" class="help-block">Clave es requerida</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirmar Clave</label>
+                            <input type="password" ng-required="!IsEditing" data-ng-model="security.newClaveConfirm" class="form-control" id="txtClaveConfirm" name="txtClaveConfirm" placeholder="Confirmar clave">
+                            <span ng-show="form.txtClaveConfirm.$dirty && form.txtClaveConfirm.$error.required" class="help-block">Clave es requerida</span>
+                            <span ng-show="form.txtClaveConfirm.$dirty && security.newClave != security.newClaveConfirm" class="help-block">La clave no coincide</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nuevo PIN</label>
+                            <input type="password" ng-required="!IsEditing" ng-maxlength="4" ng-minlength="4" data-ng-model="security.newPIN" class="form-control" id="txtPINNew" name="txtPINNew" placeholder="Nuevo PIN">
+                            <span ng-show="form.txtPINNew.$dirty && form.txtPINNew.$error.required" class="help-block">PIN es requerido</span>
+                            <span ng-show="form.txtPINNew.$dirty && security.newPIN.length!=4" class="help-block">PIN es de 4 digitos</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirmar PIN</label>
+                            <input type="password" ng-required="!IsEditing" ng-maxlength="4" ng-minlength="4" data-ng-model="security.newPINConfirm" class="form-control" id="txtPINConfirm" name="txtPINConfirm" placeholder="Confirmar PIN">
+                            <span ng-show="form.txtPINConfirm.$dirty && form.txtPINConfirm.$error.required" class="help-block">PIN es requerido</span>
+                            <span ng-show="form.txtPINConfirm.$dirty && security.newPIN != security.newPINConfirm" class="help-block">El nuevo PIN no coincide</span>
+                            <span ng-show="form.txtPINConfirm.$dirty && security.newPINConfirm.length!=4" class="help-block">PIN es de 4 digitos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="buttons">
+                    <button type="submit" ng-disabled="form.$invalid || (security.newClave != security.newClaveConfirm && !IsEditing)" class="btn btn-info">Guardar</button>
+                    <button class="btn btn-danger" ng-show="canDelete" ng-click="deletebeneficiario()">Eliminar</button>
+                    <button class="btn btn-success" ng-show="canCancel" ng-click="goPath('/beneficiarios')">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <!--primer tab-->
+        <div style="padding: 20px 1px" ng-show="showEstados">
+            <!--<div ng-include="template.estadoCuentas"></div>-->
+            <div>
+                Estado de cuentas
+
+                <kendo-mobile-list-view id="gridCuentasBeneficiario" options="cuentasBeneficiarioOptions" />
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script id="tmpCuentasBeneficiario" type="text/x-kendo-tmpl">
+    <a class="container list-style" href="\#/detallesCuentaBeneficiario/{{dataItem.BeneficiariosClienteId}}">
+        <div>
+            <h3 class="title-list">
+                {{dataItem.Cliente.Tercero.Nombre}}
+               </h3>
+                <div>
+                    {{dataItem.Saldo | currency : $ : 2}}
+                </div>
+                <div>
+                    {{dataItem.Puntos | number: 2}}
+                </div>
+</div>
+    </a>
+</script>

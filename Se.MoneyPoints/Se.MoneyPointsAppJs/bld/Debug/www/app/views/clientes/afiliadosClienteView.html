@@ -1,0 +1,23 @@
+﻿<div>
+    <div>
+        <select id="cmbAliado" name="cmbAliado"
+                kendo-drop-down-list="cmbAliado" options="aliadosSelectOpts"
+                data-ng-model="aliado"></select>
+        <button ng-click="agregarAliado()" class="btn btn-info">Agregar</button>
+    </div>
+
+    <div id="divAfiliadosCliente" kendo-mobile-list-view="aliados" options="aliadosClienteOpts" />
+</div>
+
+<script id="tmpAfiliadosCliente" type="text/x-kendo-tmpl">
+
+    <div>
+        <h3>
+            {{dataItem.Afiliado.Cliente.Tercero.Nombre}}
+        </h3>
+        <div>
+            {{dataItem.FechaIngreso | date : 'dd-MM-yyyy'}}
+        </div>
+    </div>
+
+</script>

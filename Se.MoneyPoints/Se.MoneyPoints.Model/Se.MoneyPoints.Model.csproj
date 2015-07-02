@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB75A986-7F88-4140-9D25-599682C5892D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Se.MoneyPoints.Model</RootNamespace>
+    <AssemblyName>Se.MoneyPoints.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness\Entities\Afiliado.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\AfiliadosCliente.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Asegurable.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\AsegurablesRole.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Beneficiario.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\BeneficiariosCliente.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\BeneficiariosClientesCompra.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\BeneficiariosPunto.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Cliente.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Compra.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Conciliacione.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\DetallesCompra.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\enums\Enumeraciones.cs" />
+    <Compile Include="Bussiness\Entities\Equivalencia.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\MoneyPointsEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyPointsEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\MoneyPointsEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\MoneyPointsEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MoneyPointsEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Partials\AfiliadosClientes.cs" />
+    <Compile Include="Bussiness\Entities\Partials\Cliente.cs" />
+    <Compile Include="Bussiness\Entities\Partials\Transaccion.cs" />
+    <Compile Include="Bussiness\Entities\Role.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Tercero.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\Entities\Usuario.cs">
+      <DependentUpon>MoneyPointsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Bussiness\Entities\MoneyPointsEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MoneyPointsEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Bussiness\Entities\MoneyPointsEntities.edmx.diagram">
+      <DependentUpon>MoneyPointsEntities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bussiness\Entities\MoneyPointsEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MoneyPointsEntities.edmx</DependentUpon>
+      <LastGenOutput>MoneyPointsEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Bussiness\Entities\MoneyPointsEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MoneyPointsEntities.edmx</DependentUpon>
+      <LastGenOutput>MoneyPointsEntities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bussiness\Logic\" />
+    <Folder Include="Bussiness\WorkFlow\" />
+    <Folder Include="Support\Util\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
